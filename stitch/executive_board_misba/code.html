@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Executive Board | MISBA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#574143",
+                    "on-tertiary-fixed": "#001c3b",
+                    "tertiary-container": "#274268",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#233144",
+                    "tertiary-fixed": "#d5e3ff",
+                    "secondary-container": "#fecb32",
+                    "outline-variant": "#ddbfc2",
+                    "primary": "#5e001e",
+                    "surface-container-high": "#dce9ff",
+                    "tertiary": "#0c2c50",
+                    "primary-container": "#811331",
+                    "primary-fixed-dim": "#ffb2bb",
+                    "on-primary-fixed-variant": "#881936",
+                    "primary-fixed": "#ffd9dd",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#400012",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#d5e3fc",
+                    "on-secondary-container": "#705600",
+                    "background": "#f8f9ff",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#e6eeff",
+                    "on-secondary-fixed-variant": "#594400",
+                    "surface-bright": "#f8f9ff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "surface-container-low": "#eff4ff",
+                    "on-primary-container": "#ff8b9c",
+                    "outline": "#8a7173",
+                    "surface-dim": "#ccdbf3",
+                    "surface-variant": "#d5e3fc",
+                    "secondary": "#755b00",
+                    "on-tertiary-fixed-variant": "#2d486d",
+                    "inverse-primary": "#ffb2bb",
+                    "on-surface": "#0d1c2e",
+                    "on-error-container": "#93000a",
+                    "on-background": "#0d1c2e",
+                    "secondary-fixed": "#ffdf92",
+                    "surface-tint": "#a8334c",
+                    "on-secondary-fixed": "#241a00",
+                    "tertiary-fixed-dim": "#adc8f5",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#f2c025",
+                    "surface": "#f8f9ff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#94afda"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl docked full-width top-0 sticky z-50 tonal-shift bg-slate-100 dark:bg-slate-900 flat no shadows">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="scale-95 active:opacity-80 transition-all text-red-900 dark:text-red-500">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="text-2xl font-extrabold tracking-tighter text-red-900 dark:text-red-500 font-manrope">MISBA</span>
+</div>
+<nav class="hidden md:flex gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Events</a>
+<a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-amber-400 hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Executive Board</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Join</a>
+</nav>
+<button class="scale-95 active:opacity-80 transition-all text-red-900 dark:text-red-500">
+<span class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12">
+<!-- Hero Section -->
+<section class="mb-16">
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-primary mb-6 max-w-3xl">
+                The minds driving <span class="text-primary-container">innovation.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                Meet the visionary leaders and mentors shaping the future of Management Information Systems and Business Analytics at UMD.
+            </p>
+</section>
+<!-- Board Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Member 1: President -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:bg-surface-container-low">
+<div class="absolute left-0 top-6 bottom-6 w-1 bg-secondary rounded-full"></div>
+<div class="flex flex-col gap-6 pl-4">
+<div class="relative overflow-hidden rounded-xl aspect-square w-full">
+<img alt="John Harms" class="object-cover w-full h-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" data-alt="professional portrait of a young man with short brown hair wearing a dark suit and blue tie in a bright office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1eTUq-QAzeKxX3eJ7FR1wGk12c3Z52iYBWw63osNrOgvExvksztVJ22X0s4r72gJwWY66RBtcYKhXmGJqnY_BZNKpxAj9DMSM9dF5k7u_8Ew6Y_TRD6iQNlCREQvQCzzo-eGlceNKnP6uJWN1gCk1bQkAOd3zHKEQ1NZycMqBSwBm8AoSmEKKCT5VYUxYlYAkYxI9vQq2ALVzlc59s-DZTVQr4_UH4r6x2avfUyu_CE0QADBj_wu5nCDGXPhL5FhU7V5sdhEaQAE"/>
+</div>
+<div>
+<span class="text-secondary font-bold text-xs tracking-widest uppercase mb-2 block">President</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">John Harms</h3>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<span class="text-sm font-medium">LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Member 2: VP -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:bg-surface-container-low">
+<div class="absolute left-0 top-6 bottom-6 w-1 bg-secondary rounded-full"></div>
+<div class="flex flex-col gap-6 pl-4">
+<div class="relative overflow-hidden rounded-xl aspect-square w-full">
+<img alt="Haley Patel" class="object-cover w-full h-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" data-alt="professional headshot of a young woman with dark hair smiling warmly, wearing a white blazer against a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClBYpsn-o6Is7UBcxTmLVZ496Los2Vx1Lenkvub3jmXwWZh-qiWaUoPDI_VmuwugP6_oROnfFbvl7z8GdAni--vuHXOzXZlT4S78iUxkgu85aPqVRojuJc2Q2cKTymbMlneYvG0msvx3rs-5XQxkZrBm5w7vU_ORq73Kgyz3JSrQ4vPs0UiXJ5Zg5qz1ZgKSMWrVtW7u8kXEfa5b7MfOiTIrHt0SgFZzIz3EY_SCNFUaVk_qxjJ4zdh8P-jfp-lLKjScXUocksfAY"/>
+</div>
+<div>
+<span class="text-secondary font-bold text-xs tracking-widest uppercase mb-2 block">VP</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Haley Patel</h3>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<span class="text-sm font-medium">LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Member 3: Coordinator -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:bg-surface-container-low">
+<div class="absolute left-0 top-6 bottom-6 w-1 bg-secondary rounded-full"></div>
+<div class="flex flex-col gap-6 pl-4">
+<div class="relative overflow-hidden rounded-xl aspect-square w-full">
+<img alt="Jacob Smith" class="object-cover w-full h-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" data-alt="confident young man in business casual attire with glasses, short beard, smiling slightly in a modern library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMy_LWBMtkL51FMbm2zahj6ppp_SeB0otKRcNUQpv3W4d6uopzoAM1AyCw2BLG9ZMuyAdX11ijrynb44QRQx4eZgwsmg3C04MOaLvfdTz9gpxk4G5B6x9W68mN5jh7VET9ivi7vsQ1ch-zQ96H5YliiGKaijaFloUcAVpt3iDpZ-b3BmiKFP9EGJF3KrrdhG-JddWnpK-ubTuBfr51mtaPPwILYloiUo8kcmcn6I5g35tJ13NeY9gK0tpqKAeYxnoQOyeMh65ASvs"/>
+</div>
+<div>
+<span class="text-secondary font-bold text-xs tracking-widest uppercase mb-2 block">Coordinator</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Jacob Smith</h3>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<span class="text-sm font-medium">LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Member 4: Officer -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:bg-surface-container-low">
+<div class="absolute left-0 top-6 bottom-6 w-1 bg-secondary rounded-full"></div>
+<div class="flex flex-col gap-6 pl-4">
+<div class="relative overflow-hidden rounded-xl aspect-square w-full">
+<img alt="Sara Carlson" class="object-cover w-full h-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" data-alt="professional young woman with blonde hair in a navy suit looking directly at camera in a bright conference room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAfh15IYKDESsx-C2fq0PvOX74pbK3VF4xkT5aGBEWp_lbxBQyn8aipU4UusdrDpFgFI3cz2FVIVmoVZ7Q_onViCZ3DVRvZOx_yl_lL3-74ltjCPvqrTz9SQZfXMzIhfbgvpglU9zP2gfLvQsvwZOa1N02SDqFxCzehM7qXjPI_zgSea1MJJLlcTzkJq6CHV61rcEPLTv9WdioRZgh6v-A-Yo0W9nyRhnCfuT0FgSryLindE67xloWQbzK0Dw_iHThDxSBLwPK5hI"/>
+</div>
+<div>
+<span class="text-secondary font-bold text-xs tracking-widest uppercase mb-2 block">Officer</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Sara Carlson</h3>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<span class="text-sm font-medium">LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Member 5: Advisor -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:bg-surface-container-low">
+<div class="absolute left-0 top-6 bottom-6 w-1 bg-tertiary-container rounded-full"></div>
+<div class="flex flex-col gap-6 pl-4">
+<div class="relative overflow-hidden rounded-xl aspect-square w-full">
+<img alt="Abdelrahman Elkenawy" class="object-cover w-full h-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" data-alt="middle-aged academic professional with glasses and a kind expression in a campus setting with soft bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDndResYSOQN5gueR8WYo_jWDb3BEtbi4e97Mhmmjb0bSz8nqbLY8A0YPY6jkO2w87iSDeujZkvQeInjfvSDE33sEIWkTfRqHwlSrlxH4r1iyZySqe6eD6lod8sH9OiCmhuItsVey_Fqvi8NEPBYtT60EroVFys7j5WfFv2CWhzb6vWC5nT_7zZyVRR7Ui7xfnNi1iQnqk4Lv552zzaoQvN8TQtOGu0c16vvQcu4ko9CAJmpRtzsGZFdmqGkNpwDLGWSxFyHJGCJmU"/>
+</div>
+<div>
+<span class="text-tertiary font-bold text-xs tracking-widest uppercase mb-2 block">Advisor</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Abdelrahman Elkenawy</h3>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<span class="text-sm font-medium">LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Member 6: Advisor -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:bg-surface-container-low">
+<div class="absolute left-0 top-6 bottom-6 w-1 bg-tertiary-container rounded-full"></div>
+<div class="flex flex-col gap-6 pl-4">
+<div class="relative overflow-hidden rounded-xl aspect-square w-full">
+<img alt="Seung Lee" class="object-cover w-full h-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" data-alt="distinguished professor in a professional attire standing in front of a glass wall with digital data overlays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr9FmxaaXlFV0pv6eIRQ8uduNkdGRdYrA55EAOlvgkZcui8dKeukWAQoETeNzc0OGyLvVRZa1xCYHFgim6LBiwu2cGZWtSrLbpZLo4MgZ2jHw6HZfAyPYZNPzEfDovqBEec7KUX1ts58TuBaoQutOLR9Z05jXBcgWFXf35s6Tj0FoQlbwohaSwMv4VH9O6oYg-JqsSeylD4EQWfVkBna0lXkZsmXee1MEMhE3BNiMKl3peWNL-mGrZ7CfWXCfvYnMtm202KOi0cbo"/>
+</div>
+<div>
+<span class="text-tertiary font-bold text-xs tracking-widest uppercase mb-2 block">Advisor</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Seung Lee</h3>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<span class="text-sm font-medium">LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Member 7: Advisor -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:bg-surface-container-low">
+<div class="absolute left-0 top-6 bottom-6 w-1 bg-tertiary-container rounded-full"></div>
+<div class="flex flex-col gap-6 pl-4">
+<div class="relative overflow-hidden rounded-xl aspect-square w-full">
+<img alt="Nik Hassan" class="object-cover w-full h-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" data-alt="senior faculty member with a friendly smile, wearing business attire, photographed in a well-lit academic hallway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7o4V_5m8PRue-N0v63Cs5dEr-K1xYqpIBGng6Bbw0Bn_X74FT55ZsqJQ1k1aOY74OT0NUjjM_5PEsEJPhMSjC545bQebQ0xqLFhWA3s90qfMlUgpgQvY9lD5ac3jRxnf0qpxPk70w6zwDlczhF5QEa5UPJK25w9Q1vf33yE1-6pp14cjbyyALI0IhdYwHtB4Eeb6jA4coHA42mxuMwv3GZmuL9Zc6TLiGYVw9ZadJDzm4VVA5-g_xgz5GrtMaOG8w5AsVs1hB3Ss"/>
+</div>
+<div>
+<span class="text-tertiary font-bold text-xs tracking-widest uppercase mb-2 block">Advisor</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Nik Hassan</h3>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<span class="text-sm font-medium">LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 w-full py-12 px-6 tonal-shift background-color-shift flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<span class="text-lg font-black text-red-900 dark:text-red-500 font-manrope">MISBA UMD</span>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm leading-relaxed max-w-xs">
+                    Empowering students to bridge the gap between technology and business strategy through education and community.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-primary dark:text-red-500">Quick Links</h4>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="#">Instagram</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="#">duluthmisba@gmail.com</a>
+</div>
+</div>
+<div class="flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-primary dark:text-red-500">Location</h4>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                        University of Minnesota Duluth<br/>Labovitz School of Business and Economics
+                    </p>
+</div>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm leading-relaxed mt-8">© 2024 MISBA UMD. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-slate-50/90 backdrop-blur-lg border-t-0 shadow-2xl z-50">
+<div class="flex justify-around items-center h-16">
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+<span class="text-[10px] font-medium">Events</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-red-900 font-bold" href="#">
+<span class="material-symbols-outlined" data-icon="groups" style="font-variation-settings: 'FILL' 1;">groups</span>
+<span class="text-[10px]">Board</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="person_add">person_add</span>
+<span class="text-[10px] font-medium">Join</span>
+</a>
+</div>
+</div>
+</body></html>

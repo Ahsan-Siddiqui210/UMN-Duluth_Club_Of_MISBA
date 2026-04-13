@@ -1,0 +1,1740 @@
+<!-- Design System -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MISBA | Bridge the Gap</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#574143",
+                    "on-tertiary-fixed": "#001c3b",
+                    "tertiary-container": "#274268",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#233144",
+                    "tertiary-fixed": "#d5e3ff",
+                    "secondary-container": "#fecb32",
+                    "outline-variant": "#ddbfc2",
+                    "primary": "#5e001e",
+                    "surface-container-high": "#dce9ff",
+                    "tertiary": "#0c2c50",
+                    "primary-container": "#811331",
+                    "primary-fixed-dim": "#ffb2bb",
+                    "on-primary-fixed-variant": "#881936",
+                    "primary-fixed": "#ffd9dd",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#400012",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#d5e3fc",
+                    "on-secondary-container": "#705600",
+                    "background": "#f8f9ff",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#e6eeff",
+                    "on-secondary-fixed-variant": "#594400",
+                    "surface-bright": "#f8f9ff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "surface-container-low": "#eff4ff",
+                    "on-primary-container": "#ff8b9c",
+                    "outline": "#8a7173",
+                    "surface-dim": "#ccdbf3",
+                    "surface-variant": "#d5e3fc",
+                    "secondary": "#755b00",
+                    "on-tertiary-fixed-variant": "#2d486d",
+                    "inverse-primary": "#ffb2bb",
+                    "on-surface": "#0d1c2e",
+                    "on-error-container": "#93000a",
+                    "on-background": "#0d1c2e",
+                    "secondary-fixed": "#ffdf92",
+                    "surface-tint": "#a8334c",
+                    "on-secondary-fixed": "#241a00",
+                    "tertiary-fixed-dim": "#adc8f5",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#f2c025",
+                    "surface": "#f8f9ff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#94afda"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body">
+<!-- TopAppBar -->
+<header class="bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl docked full-width top-0 sticky z-50 tonal-shift bg-slate-100 dark:bg-slate-900">
+<nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-red-900 dark:text-red-500 cursor-pointer" data-icon="menu">menu</span>
+<span class="text-2xl font-extrabold tracking-tighter text-red-900 dark:text-red-500 font-headline">MISBA</span>
+</div>
+<!-- Desktop Nav (Hidden on Mobile as per Shell visibility rules) -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-amber-400 hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Events</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Executive Board</a>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-red-900 dark:text-red-500 cursor-pointer scale-95 active:opacity-80 transition-all" data-icon="dark_mode">dark_mode</span>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-12 pb-24 px-6">
+<div class="max-w-7xl mx-auto editorial-grid gap-y-12">
+<div class="col-span-12 md:col-span-7 z-10">
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label text-sm font-bold mb-6">
+<span class="material-symbols-outlined text-[18px] mr-2" data-icon="hub">hub</span>
+                        UNIVERSITY OF MARYLAND
+                    </div>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-primary leading-[1.1] tracking-tight mb-8">
+                        Bridge the Gap <br/>
+<span class="text-tertiary">Between Business &amp; Tech</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                        Empowering students with the intersection of Management Information Systems and Business Analytics through community, mentorship, and professional growth.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary-container text-on-primary px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2">
+                            Join Now
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="bg-surface-container-high text-tertiary px-8 py-4 rounded-full font-bold text-lg hover:bg-surface-container-highest transition-all flex items-center justify-center gap-2">
+                            Newsletter Signup
+                        </button>
+</div>
+</div>
+<!-- Hero Image / Visual Element -->
+<div class="col-span-12 md:col-span-5 relative mt-12 md:mt-0">
+<div class="aspect-square rounded-3xl overflow-hidden relative shadow-2xl">
+<img alt="Student collaboration" class="w-full h-full object-cover" data-alt="Modern collaborative workspace with diverse college students working together on laptops in a bright, sunlit university hall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4g4rfLNaopE4mkhPI79pvH5bcEhymeE0a91QDGponr106dcOELb6LWZCFuiHnxiG2PRGjo2iHNgjJzzMlvXz5ngmtfZmg7zEgrWjANgG4UP2NQZ4BdE8bzxwWYzjJJNuF2D-B0QdQT8T9N_KVvoRYd3slUIbRLrHD61qJdpDVTePrsp-M7vYKWDmZkDnxKchvzMHHYpuZhgDn3rqPDlOEUInaLUk1TZS1fxUbKHx2F5FoV8kdFBaStqzxvdBEhTZPoaTEtT8M2lk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+<!-- Stats Floating Card -->
+<div class="absolute -bottom-6 -left-6 md:-left-12 bg-surface-container-lowest p-6 rounded-2xl shadow-xl border-l-4 border-secondary max-w-xs">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+</div>
+<div>
+<p class="text-sm font-label text-on-surface-variant">Active Growth</p>
+<p class="text-xl font-bold font-headline text-tertiary">Spring 2024</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section (Asymmetric) -->
+<section class="bg-surface-container-low py-20 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 bg-surface-container-lowest rounded-2xl flex flex-col items-center text-center">
+<span class="text-5xl font-headline font-extrabold text-primary mb-2">102</span>
+<span class="text-sm font-label uppercase tracking-widest text-on-surface-variant font-bold">Members</span>
+<p class="mt-4 text-sm text-slate-500">A diverse community of Terps passionate about technology.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-2xl flex flex-col items-center text-center transform md:translate-y-8">
+<span class="text-5xl font-headline font-extrabold text-secondary mb-2">30</span>
+<span class="text-sm font-label uppercase tracking-widest text-on-surface-variant font-bold">Events</span>
+<p class="mt-4 text-sm text-slate-500">Workshops, speaker panels, and networking nights annually.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-2xl flex flex-col items-center text-center">
+<span class="text-5xl font-headline font-extrabold text-tertiary mb-2">9</span>
+<span class="text-sm font-label uppercase tracking-widest text-on-surface-variant font-bold">Newsletters</span>
+<p class="mt-4 text-sm text-slate-500">Curation of industry trends and career opportunities.</p>
+</div>
+</div>
+</section>
+<!-- Features Bento Grid -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="text-4xl font-headline font-bold text-tertiary mb-4">Why MISBA?</h2>
+<div class="w-20 h-1.5 bg-secondary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+<!-- Feature 1: Guest Speakers -->
+<div class="md:col-span-3 bg-surface-container-high rounded-[2rem] p-10 flex flex-col justify-between overflow-hidden relative group">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="record_voice_over">record_voice_over</span>
+<h3 class="text-2xl font-headline font-bold text-tertiary mb-4">Guest Speakers</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Learn directly from industry veterans at Deloitte, Google, and Amazon about the future of MIS.</p>
+<button class="text-primary font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
+                            View Schedule <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[200px] absolute -right-10 -top-10" data-icon="podium">podium</span>
+</div>
+</div>
+<!-- Feature 2: Career Events -->
+<div class="md:col-span-3 bg-primary text-on-primary rounded-[2rem] p-10 flex flex-col justify-between relative overflow-hidden">
+<div class="z-10">
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-6" data-icon="work">work</span>
+<h3 class="text-2xl font-headline font-bold mb-4">Career Events</h3>
+<p class="text-primary-fixed leading-relaxed mb-6">Resume reviews, mock interviews, and exclusive recruitment sessions tailored for analytics roles.</p>
+</div>
+<img alt="Career event background" class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay" data-alt="Silhouettes of professional people talking at a business conference with blue and red ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoofoWfe-G_BR575JoyvtqD-m8_lYFXOOnnN_KXwh88yj5P4nEC3e6il70auynhKMvgOaslukPAXL509lE3apk9J7LQI76ytAhLboLnlxYX25G-VVxrWwkbEoQgdOag94ZEYE50Kr9VTX8b9WY-crcwExDy0Lj2gWZCO9s5Xru_q56veqmFMohpEfqki41DirDsBHF4pZJLYD0YOfrM6eQP_VU9w3mp79H9hmGkObkSBgxloq-PqrwT9jUPYs0TDGoJV_ME27mOkA"/>
+</div>
+<!-- Feature 3: Community Bonding -->
+<div class="md:col-span-6 bg-surface-container-low rounded-[2rem] p-10 flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<div class="flex gap-2 mb-6">
+<span class="material-symbols-outlined text-secondary" data-icon="groups" data-weight="fill" style="font-variation-settings: 'FILL' 1;">groups</span>
+<span class="font-label text-sm font-bold tracking-widest text-on-surface-variant uppercase">The MISBA Tribe</span>
+</div>
+<h3 class="text-3xl font-headline font-bold text-tertiary mb-4">Community Bonding</h3>
+<p class="text-on-surface-variant leading-relaxed">It's not all business. From game nights to picnic socials, we build friendships that last long after graduation.</p>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-4 w-full">
+<div class="aspect-video bg-surface-variant rounded-xl overflow-hidden shadow-lg transform rotate-2">
+<img alt="Community social" class="w-full h-full object-cover" data-alt="Group of diverse young adults laughing and talking in a casual university lounge setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmiAWtc4bxwgJPli4X9FkYDo9uzXoTbQsUHflKtoCcKxTB7EZl9IglNUqUGHcpcMcHWNHDr9kElfYkRRdWkwICCKqYL8-auBolOIAcPp9BoEUU83FTKOeVnih0iR7yZ2ZolT4TEkBS-VKgb3BmKk4twqCetf6GKt193BNhrjr854rKXWBdKJd0SVQKnjKUTfbTXcdUVBVVsRcPPecc9DAHhXN911ejAeEy_WfUsAtJsT9NMpKp5jIgp4gxletThHi6SR6FZDucOrQ"/>
+</div>
+<div class="aspect-video bg-surface-variant rounded-xl overflow-hidden shadow-lg transform -rotate-2 translate-y-4">
+<img alt="Outdoor gathering" class="w-full h-full object-cover" data-alt="Outdoor university gathering with students sitting on grass during a sunny autumn afternoon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEg9PoRB3oWax12D-sWf4nvbRfmP7kBCoHvsYgXAoB0ebfrIQyoqOHKzDvh0VzxUZHmheFcVfsewfBDN2ExG9O34R4XjZgq_4MeWkKYZaLVlzG-Fc44daRH8s-TXowtnTgA29usiWf1TPqCuZG5cqZw_B7ERTFzp5UzB5MtMGt4FsMfpDw6n_5-57dPIr6SZdHY4LAHtp_ovTNwxzTYO4wxfchbTV9oXpLAsy70cVD1xTGLOKOsiJXcZfi3HJn1O1DfU22g8CX3AQ"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter CTA -->
+<section class="bg-tertiary py-20 px-6">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-headline font-bold text-white mb-6">Stay ahead of the curve</h2>
+<p class="text-tertiary-fixed mb-10 text-lg">Join 500+ Terps receiving weekly insights on business analytics and club updates.</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-1 px-6 py-4 rounded-full bg-white/10 border-white/20 text-white placeholder:text-white/40 focus:ring-2 focus:ring-secondary outline-none transition-all" placeholder="Enter your .umd email" type="email"/>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-full font-bold hover:bg-secondary-fixed transition-all shadow-lg active:scale-95">Subscribe</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 w-full py-12 px-6 tonal-shift background-color-shift">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto font-inter text-sm leading-relaxed">
+<div class="space-y-4">
+<span class="text-lg font-black text-red-900 dark:text-red-500">MISBA</span>
+<p class="text-slate-500 dark:text-slate-400">Management Information Systems <br/>&amp; Business Analytics Society</p>
+<p class="text-slate-500 dark:text-slate-400">© 2024 MISBA UMD. All rights reserved.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-red-900 dark:text-red-500 uppercase tracking-widest text-xs">Quick Links</h4>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-800 dark:hover:text-red-200 underline transition-opacity" href="#">Instagram</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-800 dark:hover:text-red-200 underline transition-opacity" href="#">LinkedIn</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-800 dark:hover:text-red-200 underline transition-opacity" href="mailto:duluthmisba@gmail.com">duluthmisba@gmail.com</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-red-900 dark:text-red-500 uppercase tracking-widest text-xs">University</h4>
+<p class="text-slate-500 dark:text-slate-400">Robert H. Smith School of Business<br/>University of Maryland, College Park</p>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Only for Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 flex justify-around items-center py-3 px-4 z-50">
+<div class="flex flex-col items-center gap-1 text-red-900 dark:text-red-400 font-bold">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px]">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+<span class="text-[10px]">Events</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined" data-icon="person_add">person_add</span>
+<span class="text-[10px]">Join</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="text-[10px]">Contact</span>
+</div>
+</nav>
+</body></html>
+
+<!-- Home - MISBA -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#574143",
+                    "on-tertiary-fixed": "#001c3b",
+                    "tertiary-container": "#274268",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#233144",
+                    "tertiary-fixed": "#d5e3ff",
+                    "secondary-container": "#fecb32",
+                    "outline-variant": "#ddbfc2",
+                    "primary": "#5e001e",
+                    "surface-container-high": "#dce9ff",
+                    "tertiary": "#0c2c50",
+                    "primary-container": "#811331",
+                    "primary-fixed-dim": "#ffb2bb",
+                    "on-primary-fixed-variant": "#881936",
+                    "primary-fixed": "#ffd9dd",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#400012",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#d5e3fc",
+                    "on-secondary-container": "#705600",
+                    "background": "#f8f9ff",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#e6eeff",
+                    "on-secondary-fixed-variant": "#594400",
+                    "surface-bright": "#f8f9ff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "surface-container-low": "#eff4ff",
+                    "on-primary-container": "#ff8b9c",
+                    "outline": "#8a7173",
+                    "surface-dim": "#ccdbf3",
+                    "surface-variant": "#d5e3fc",
+                    "secondary": "#755b00",
+                    "on-tertiary-fixed-variant": "#2d486d",
+                    "inverse-primary": "#ffb2bb",
+                    "on-surface": "#0d1c2e",
+                    "on-error-container": "#93000a",
+                    "on-background": "#0d1c2e",
+                    "secondary-fixed": "#ffdf92",
+                    "surface-tint": "#a8334c",
+                    "on-secondary-fixed": "#241a00",
+                    "tertiary-fixed-dim": "#adc8f5",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#f2c025",
+                    "surface": "#f8f9ff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#94afda"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl docked full-width top-0 sticky z-50 tonal-shift bg-slate-100 dark:bg-slate-900 flat no shadows">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="scale-95 active:opacity-80 transition-all text-red-900 dark:text-red-500">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-2xl font-extrabold tracking-tighter text-red-900 dark:text-red-500">MISBA</h1>
+</div>
+<div class="flex items-center gap-4">
+<nav class="hidden md:flex gap-6">
+<a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-amber-400 hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Events</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Join</a>
+</nav>
+<button class="scale-95 active:opacity-80 transition-all text-red-900 dark:text-red-500">
+<span class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+</button>
+</div>
+</div>
+</header>
+<main class="relative">
+<!-- Hero Section -->
+<section class="px-6 pt-12 pb-20 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col gap-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold w-fit">
+<span class="material-symbols-outlined text-sm" data-icon="school">school</span>
+                    ESTABLISHED AT UMD
+                </div>
+<h2 class="text-5xl font-extrabold tracking-tight text-primary leading-[1.1] max-w-md">
+                    Where Technology Meets <span class="text-secondary">Opportunity.</span>
+</h2>
+<div class="relative mt-8">
+<div class="rounded-xl overflow-hidden shadow-xl aspect-square md:aspect-video">
+<img alt="Student collaboration" class="w-full h-full object-cover" data-alt="Modern university students collaborating in a high-tech glass-walled study space with laptops and warm evening ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-xY4TpT2Mo7cv1n7Z6b4gTynLCvEKn087PJ0inhd_MxX2jHFhYAKjvW8Ms2DzDidQR1MI0N3FrnBTMv4mvQNwujv7WyspQ56Up0rIMAvL5OL6R5zWbjHTgCi2CZtFyveBsf421eloK9F9ePnwLk7OjvfdOHgWcdzVYs3perzomPVejWFlxVGpqgFL2-m-OPEpvzobtGjbSpfd9rDyeniEzi50aa6ahCAWbVY9oqzZ2xXZ-r8WrJshEgLe9fEULo3zxXH7w35YP2M"/>
+</div>
+<div class="absolute -bottom-6 -right-4 bg-tertiary p-6 rounded-xl shadow-2xl text-on-tertiary max-w-[200px]">
+<p class="text-xs font-label uppercase tracking-widest opacity-70 mb-1">Our Mission</p>
+<p class="text-sm font-semibold leading-relaxed">Boosting knowledge and skills in IT and technology.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission Content - Bento Style -->
+<section class="bg-surface-container-low py-20 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 gap-6">
+<!-- Main Mission Text Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+<h3 class="text-2xl font-bold text-primary mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="rocket_launch">rocket_launch</span>
+                            Welcome to MISBA
+                        </h3>
+<p class="text-lg leading-relaxed text-on-surface-variant font-body mb-6">
+                            Welcome to the UMD Management Information Systems (MIS) and Business Analytics Club, where we're passionate about boosting knowledge and skills in IT and technology.
+                        </p>
+<p class="text-lg leading-relaxed text-on-surface-variant font-body">
+                            Our club welcomes all, including MIS and BA majors, whether you're looking to boost your career, advance your academic journey, or simply want to dive deeper into the world of technology.
+                        </p>
+</div>
+<!-- Asymmetric Feature Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-tertiary-container p-8 rounded-xl text-on-tertiary-container">
+<span class="material-symbols-outlined text-4xl mb-4 text-tertiary-fixed" data-icon="record_voice_over">record_voice_over</span>
+<h4 class="text-xl font-bold mb-3 text-white">Expert Insights</h4>
+<p class="opacity-90">We regularly host guest speakers who provide valuable insights into the industry, bridging the gap between academia and professional reality.</p>
+</div>
+<div class="bg-white p-8 rounded-xl border-l-4 border-secondary shadow-sm">
+<span class="material-symbols-outlined text-4xl mb-4 text-secondary" data-icon="work">work</span>
+<h4 class="text-xl font-bold mb-3 text-primary">Career Success</h4>
+<p class="text-on-surface-variant">We offer events that assist in resume building and career development to help you succeed in your professional pursuits.</p>
+</div>
+</div>
+<!-- Community Card -->
+<div class="relative group overflow-hidden rounded-xl h-64 flex items-center justify-center">
+<img alt="Club social gathering" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Group of diverse college students laughing and talking in a modern campus lounge with blurred background and warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSqdTRXjyYR3Y-JbC9AEET49aKQ3k-5KQuVnnLdahtI_tCeE6Mlsxejx5q1DxRDHFFue8BRwQA6L6D-r4bVKCEFeKU0Vqv7Q3bsGy3ltIPGvS6n5abEoPvS_2vxyJUmhd87rDjhDMkKeDNbJsqOCJbEqVvLlrZLah7_UEKuCPIPEfpJdXsS2akPC6aYVKlwhTpVHqs3oRvW6TwsrbGVqnTsq6nnPZHqBlPHNhg9McI5qzKufvqJLdaGqhM-al3FSqf9wurH5JBlCk"/>
+<div class="absolute inset-0 bg-primary/60 backdrop-blur-[2px]"></div>
+<div class="relative z-10 p-8 text-center">
+<h4 class="text-2xl font-bold text-white mb-2">Supportive Community</h4>
+<p class="text-white/90 max-w-md mx-auto">Organizing club bonding events, creating a supportive community where lasting connections are forged.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- UMD Inclusion Policy -->
+<section class="py-20 px-6 bg-surface">
+<div class="max-w-7xl mx-auto border-t border-outline-variant/20 pt-12">
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div class="md:w-1/3">
+<h3 class="text-sm font-black uppercase tracking-[0.2em] text-secondary-fixed-dim mb-4">University Standards</h3>
+<h2 class="text-3xl font-bold text-primary">Commitment to Inclusion</h2>
+</div>
+<div class="md:w-2/3">
+<div class="bg-surface-container-high p-8 rounded-xl italic font-body text-on-surface-variant leading-relaxed">
+                            "The University of Minnesota is committed to the policy that all persons shall have equal access to its programs, facilities, and employment without regard to race, color, creed, religion, national origin, sex, age, marital status, disability, public assistance status, veteran status, or sexual orientation."
+                        </div>
+<p class="mt-6 text-sm text-on-surface-variant/70 font-medium">
+                            MISBA strictly adheres to the University of Minnesota Duluth inclusion policies to ensure an equitable environment for all technology enthusiasts.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- NavigationDrawer (Mobile Only Simulation) -->
+<div class="fixed inset-y-0 left-0 z-[60] w-72 bg-slate-50 dark:bg-slate-950 rounded-r-2xl h-full shadow-2xl transition-transform duration-300 ease-in-out -translate-x-full" id="mobile-drawer">
+<div class="p-6">
+<h2 class="text-xl font-bold text-red-900 mb-8">MISBA Navigation</h2>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-4 p-3 text-slate-700 dark:text-slate-300 mx-2 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span> Home
+                </a>
+<a class="flex items-center gap-4 p-3 bg-red-50 dark:bg-red-900/20 text-red-900 dark:text-red-400 rounded-lg mx-2 font-manrope font-semibold" href="#">
+<span class="material-symbols-outlined" data-icon="info">info</span> About
+                </a>
+<a class="flex items-center gap-4 p-3 text-slate-700 dark:text-slate-300 mx-2 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="event">event</span> Events
+                </a>
+<a class="flex items-center gap-4 p-3 text-slate-700 dark:text-slate-300 mx-2 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span> Executive Board
+                </a>
+<a class="flex items-center gap-4 p-3 text-slate-700 dark:text-slate-300 mx-2 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="person_add">person_add</span> Join
+                </a>
+<a class="flex items-center gap-4 p-3 text-slate-700 dark:text-slate-300 mx-2 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span> Contact
+                </a>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 w-full py-12 px-6 tonal-shift background-color-shift">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto font-inter text-sm leading-relaxed">
+<div class="flex flex-col gap-4">
+<span class="text-lg font-black text-red-900 dark:text-red-500">MISBA UMD</span>
+<p class="text-slate-500 dark:text-slate-400">University of Minnesota Duluth Management Information Systems &amp; Business Analytics Club.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-bold text-red-900 dark:text-red-500">Connect</h4>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-800 dark:hover:text-red-200 underline opacity-90 hover:opacity-100 transition-opacity" href="#">Instagram</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-800 dark:hover:text-red-200 underline opacity-90 hover:opacity-100 transition-opacity" href="#">LinkedIn</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-800 dark:hover:text-red-200 underline opacity-90 hover:opacity-100 transition-opacity" href="mailto:duluthmisba@gmail.com">duluthmisba@gmail.com</a>
+</div>
+<div class="flex flex-col gap-3 md:items-end">
+<p class="text-slate-500 dark:text-slate-400">© 2024 MISBA UMD. All rights reserved.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-red-900 dark:text-red-500" data-icon="hub">hub</span>
+<span class="material-symbols-outlined text-red-900 dark:text-red-500" data-icon="analytics">analytics</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bottom Navigation (Mobile Only) -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-slate-50/95 backdrop-blur-md border-t border-slate-200 flex justify-around py-3 z-40">
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-red-900" href="#">
+<span class="material-symbols-outlined" data-icon="info" style="font-variation-settings: 'FILL' 1;">info</span>
+<span class="text-[10px] font-bold">About</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+<span class="text-[10px] font-medium">Events</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="person_add">person_add</span>
+<span class="text-[10px] font-medium">Join</span>
+</a>
+</div>
+</body></html>
+
+<!-- About Us - MISBA -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MISBA Events - Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .headline-font { font-family: 'Manrope', sans-serif; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#574143",
+                        "on-tertiary-fixed": "#001c3b",
+                        "tertiary-container": "#274268",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#233144",
+                        "tertiary-fixed": "#d5e3ff",
+                        "secondary-container": "#fecb32",
+                        "outline-variant": "#ddbfc2",
+                        "primary": "#5e001e",
+                        "surface-container-high": "#dce9ff",
+                        "tertiary": "#0c2c50",
+                        "primary-container": "#811331",
+                        "primary-fixed-dim": "#ffb2bb",
+                        "on-primary-fixed-variant": "#881936",
+                        "primary-fixed": "#ffd9dd",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#400012",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#d5e3fc",
+                        "on-secondary-container": "#705600",
+                        "background": "#f8f9ff",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#e6eeff",
+                        "on-secondary-fixed-variant": "#594400",
+                        "surface-bright": "#f8f9ff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface-container-low": "#eff4ff",
+                        "on-primary-container": "#ff8b9c",
+                        "outline": "#8a7173",
+                        "surface-dim": "#ccdbf3",
+                        "surface-variant": "#d5e3fc",
+                        "secondary": "#755b00",
+                        "on-tertiary-fixed-variant": "#2d486d",
+                        "inverse-primary": "#ffb2bb",
+                        "on-surface": "#0d1c2e",
+                        "on-error-container": "#93000a",
+                        "on-background": "#0d1c2e",
+                        "secondary-fixed": "#ffdf92",
+                        "surface-tint": "#a8334c",
+                        "on-secondary-fixed": "#241a00",
+                        "tertiary-fixed-dim": "#adc8f5",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#f2c025",
+                        "surface": "#f8f9ff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#94afda"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-24">
+<!-- TopAppBar Shell -->
+<header class="bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl docked full-width top-0 sticky z-50 no-line tonal-shift bg-slate-100 dark:bg-slate-900 flat no shadows">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-red-900 dark:text-red-500 transition-all scale-95 active:opacity-80" data-icon="menu">menu</span>
+<span class="text-2xl font-extrabold tracking-tighter text-red-900 dark:text-red-500 font-manrope">MISBA</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-red-900 dark:text-red-500 transition-all scale-95 active:opacity-80" data-icon="dark_mode">dark_mode</span>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-8 pb-12">
+<!-- Dashboard Greeting -->
+<section class="mb-10">
+<div class="flex flex-col gap-1">
+<span class="text-secondary font-bold tracking-widest text-xs uppercase">Dashboard</span>
+<h1 class="text-4xl font-extrabold text-primary tracking-tight font-headline">Events Workshop</h1>
+<p class="text-on-surface-variant mt-2 max-w-md">Your digital atelier for career growth and networking opportunities.</p>
+</div>
+</section>
+<!-- Google Calendar Integration Banner -->
+<section class="mb-12">
+<div class="bg-surface-container-low rounded-xl p-6 flex flex-row items-center justify-between border-l-4 border-secondary shadow-sm">
+<div class="flex items-center gap-4">
+<div class="bg-surface-container-highest p-3 rounded-full">
+<span class="material-symbols-outlined text-tertiary" data-icon="calendar_today">calendar_today</span>
+</div>
+<div>
+<h3 class="font-bold text-on-surface">Sync to Google Calendar</h3>
+<p class="text-sm text-on-surface-variant">Stay updated with all MISBA events automatically.</p>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-all">Sync Now</button>
+</div>
+</section>
+<!-- Events Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Event Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col group transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="h-48 w-full relative">
+<img alt="Professional resume on a clean desk" class="w-full h-full object-cover" data-alt="top-down view of a modern minimalist office desk with a professional resume and a pair of sleek glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL8D09UfCLoyhhk9y0-ZLfF7Xf2m7Y8XqfScHlBcb2U5i5gzR6qd7gUiU--OU-bVC-jnz7THq5AfdC-Li4ATb-mEQ_A70x5EdnLNzROeI-ikKSvVxdeEaRgVSz9trdHMBmENxT70PNhrBRAWXubZ0IEgJs0Tk33XWslGtq2XHDyVvS2sVlb6GJv6UEcRn1ye6Cjr8foACYVdOyKjRBqvmuAKYwt_DBLMe0U1FXiWi-4hrenzd8Bub0zuTTtbC3J0RV7sEoaoJDpUo"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold shadow-md">Workshop</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="schedule">schedule</span>
+<span class="text-xs font-semibold text-on-surface-variant">Oct 24 • 5:00 PM</span>
+</div>
+<h2 class="text-2xl font-bold text-primary mb-2 font-headline">Resume Workshop</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">
+                        Refine your professional narrative with our technical resume building session tailored for MIS and Data roles.
+                    </p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-200"></div>
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-300"></div>
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-400"></div>
+<span class="pl-4 text-xs font-medium text-slate-500">+12 going</span>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold transition-all hover:bg-primary-container active:scale-95">RSVP</button>
+</div>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col group transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="h-48 w-full relative">
+<img alt="Data visualization dashboard on a large screen" class="w-full h-full object-cover" data-alt="close-up of a vibrant data analytics dashboard with blue and orange charts reflected on a glass surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhjRFP2nRBhnIiP5m_Wpt63DJwTbDV1D1mWMHZcWc65wgHkMD_aNDDv_bBypFKDebGNzX-PK3LjfvNVKofkvCoCZbfSOUNq44xGEi6ZoeknX4I-7TrM9cVhzmIubPi1j3aa1frmZYzYYLJuTevBgo_qatORPjYSeFXxfkIzCv2xdoFVfvbU0yK4cEFW1qsLkst0Y-J5vMG2bCQwFYlYCHYO1Gh1tRJXlJ5sXG6p1rHr3kZgjgRTzjnp_WBNlxTkEQmGY26WwAXG00"/>
+<div class="absolute top-4 left-4">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold shadow-md">Speaker Series</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="event">event</span>
+<span class="text-xs font-semibold text-on-surface-variant">Nov 02 • 6:30 PM</span>
+</div>
+<h2 class="text-2xl font-bold text-primary mb-2 font-headline">Guest Speaker: Data Analyst</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow">
+                        Insights from a Lead Data Analyst at a Fortune 500 company on the future of business intelligence and AI.
+                    </p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-200"></div>
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-300"></div>
+<span class="pl-4 text-xs font-medium text-slate-500">+45 going</span>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold transition-all hover:bg-primary-container active:scale-95">RSVP</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-slate-100 dark:bg-slate-900 w-full py-12 px-6 tonal-shift background-color-shift flat no shadows border-t border-slate-200/50">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<span class="text-lg font-black text-red-900 dark:text-red-500 font-headline">MISBA</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed font-inter">© 2024 MISBA UMD. All rights reserved.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-primary font-bold text-sm uppercase tracking-widest">Connect</h4>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="#">Instagram</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="mailto:duluthmisba@gmail.com">duluthmisba@gmail.com</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-primary font-bold text-sm uppercase tracking-widest">Navigation</h4>
+<div class="flex flex-wrap gap-x-6 gap-y-2">
+<span class="text-slate-500 dark:text-slate-400 text-sm">Home</span>
+<span class="text-slate-500 dark:text-slate-400 text-sm">About</span>
+<span class="text-amber-500 font-semibold text-sm">Events</span>
+<span class="text-slate-500 dark:text-slate-400 text-sm">Join</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-slate-50/90 dark:bg-slate-950/90 backdrop-blur-xl z-50 flex justify-around items-center px-4 py-3 border-t border-slate-200/50">
+<div class="flex flex-col items-center gap-1 text-slate-600 dark:text-slate-400 transition-all scale-95 active:opacity-80">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-medium font-inter">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-red-900 dark:text-red-400 font-bold transition-all scale-95 active:opacity-80">
+<div class="bg-red-50 dark:bg-red-900/20 px-4 py-1 rounded-full flex flex-col items-center">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+<span class="text-[10px] font-bold font-inter">Events</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-600 dark:text-slate-400 transition-all scale-95 active:opacity-80">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="text-[10px] font-medium font-inter">Board</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-600 dark:text-slate-400 transition-all scale-95 active:opacity-80">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="text-[10px] font-medium font-inter">Contact</span>
+</div>
+</nav>
+</body></html>
+
+<!-- Events - MISBA -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Join MISBA | UMD Management Information Systems &amp; Business Analytics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#574143",
+                    "on-tertiary-fixed": "#001c3b",
+                    "tertiary-container": "#274268",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#233144",
+                    "tertiary-fixed": "#d5e3ff",
+                    "secondary-container": "#fecb32",
+                    "outline-variant": "#ddbfc2",
+                    "primary": "#5e001e",
+                    "surface-container-high": "#dce9ff",
+                    "tertiary": "#0c2c50",
+                    "primary-container": "#811331",
+                    "primary-fixed-dim": "#ffb2bb",
+                    "on-primary-fixed-variant": "#881936",
+                    "primary-fixed": "#ffd9dd",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#400012",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#d5e3fc",
+                    "on-secondary-container": "#705600",
+                    "background": "#f8f9ff",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#e6eeff",
+                    "on-secondary-fixed-variant": "#594400",
+                    "surface-bright": "#f8f9ff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "surface-container-low": "#eff4ff",
+                    "on-primary-container": "#ff8b9c",
+                    "outline": "#8a7173",
+                    "surface-dim": "#ccdbf3",
+                    "surface-variant": "#d5e3fc",
+                    "secondary": "#755b00",
+                    "on-tertiary-fixed-variant": "#2d486d",
+                    "inverse-primary": "#ffb2bb",
+                    "on-surface": "#0d1c2e",
+                    "on-error-container": "#93000a",
+                    "on-background": "#0d1c2e",
+                    "secondary-fixed": "#ffdf92",
+                    "surface-tint": "#a8334c",
+                    "on-secondary-fixed": "#241a00",
+                    "tertiary-fixed-dim": "#adc8f5",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#f2c025",
+                    "surface": "#f8f9ff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#94afda"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl docked full-width top-0 sticky z-50 tonal-shift bg-slate-100 dark:bg-slate-900">
+<nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-red-900 dark:text-red-500 cursor-pointer" data-icon="menu">menu</span>
+<span class="text-2xl font-extrabold tracking-tighter text-red-900 dark:text-red-500 font-headline">MISBA</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Events</a>
+<a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-amber-400 hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Join</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-red-900 dark:text-red-500 cursor-pointer p-2 scale-95 active:opacity-80 transition-all" data-icon="dark_mode">dark_mode</span>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative px-6 pt-20 pb-32 overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-6">Membership 2024</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-primary tracking-tight leading-[1.1] mb-8">
+                        Forge Your <br/>Digital Future.
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-lg mb-10 leading-relaxed">
+                        Join UMD's premier community for Management Information Systems and Business Analytics. Bridge the gap between technology and business strategy.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-primary text-on-primary font-bold text-lg hover:bg-primary-container transition-all shadow-xl shadow-primary/10" href="https://campusgroups.umd.edu">
+                            Join Now
+                            <span class="material-symbols-outlined ml-2" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-outline text-primary font-bold text-lg hover:bg-surface-container-low transition-all" href="#benefits">
+                            View Benefits
+                        </a>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-[3rem] overflow-hidden rotate-3 shadow-2xl">
+<img alt="Student Collaboration" class="w-full h-full object-cover" data-alt="Modern collaborative workspace with diverse students working on laptops in a sunlit academic building with industrial design elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXBHBlWJyEl8XGjnoWQRyYMJIQ6Nru5xl2_BKfy4LtLIDrFFtick5C3IxWaI8fV3Xa2OoEZOtHmdOmDfgddBbVldxl0CjAgKIlL_fTZUq8mu5brWAP_XwqqoZCBCY3JWhVjj4_KOmDo4peYVuCuwt0NAdM47J_SHbCO8XjzbuyO-kRINzX_eH8vS-rF3wFz0bn1tQ3b09mgjRDdmPbTdhT31UzAPmSRa1EX4qi9qqQO-c8OilTa6PZX17iOuwthMoGniqYKigvGEo"/>
+</div>
+<div class="absolute -bottom-8 -left-8 glass-effect bg-white/40 p-6 rounded-2xl border border-white/20 shadow-xl hidden md:block">
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200"></div>
+<div class="w-10 h-10 rounded-full border-2 border-white bg-slate-300"></div>
+<div class="w-10 h-10 rounded-full border-2 border-white bg-slate-400"></div>
+</div>
+<div>
+<p class="text-sm font-bold text-primary">500+ Members</p>
+<p class="text-xs text-on-surface-variant">Active this semester</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Background Decoration -->
+<div class="absolute top-0 right-0 -z-10 w-1/2 h-full bg-gradient-to-l from-surface-container-high/40 to-transparent"></div>
+</section>
+<!-- Benefits Bento Grid -->
+<section class="py-24 bg-surface-container-low" id="benefits">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-5xl font-headline font-bold text-primary mb-4">The MISBA Advantage</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">More than just a club, we are a professional launchpad designed to prepare you for the data-driven economy.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Benefit 1 -->
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-3xl shadow-sm border-l-4 border-secondary flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="work">work</span>
+<h3 class="text-2xl font-headline font-bold text-tertiary mb-3">Career Pipeline</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Gain exclusive access to recruitment events with top-tier tech firms, consulting groups, and Fortune 500 companies actively seeking MIS and Analytics talent.</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-semibold">Tech Recruitment</span>
+<span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-semibold">Consulting</span>
+<span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-semibold">Resume Workshops</span>
+</div>
+</div>
+<!-- Benefit 2 -->
+<div class="bg-primary text-on-primary p-8 rounded-3xl shadow-lg flex flex-col justify-center text-center">
+<span class="material-symbols-outlined text-5xl mb-6" data-icon="terminal">terminal</span>
+<h3 class="text-2xl font-headline font-bold mb-3">Technical Labs</h3>
+<p class="text-on-primary/80 leading-relaxed">Hands-on workshops in SQL, Python, Tableau, and AWS led by industry professionals.</p>
+</div>
+<!-- Benefit 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border-l-4 border-secondary">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="groups">groups</span>
+<h3 class="text-2xl font-headline font-bold text-tertiary mb-3">Alumni Network</h3>
+<p class="text-on-surface-variant leading-relaxed">Connect with a global network of UMD alumni working at Google, Deloitte, Amazon, and beyond.</p>
+</div>
+<!-- Benefit 4 -->
+<div class="md:col-span-2 relative overflow-hidden bg-surface-container-lowest rounded-3xl shadow-sm group">
+<div class="absolute inset-0 bg-gradient-to-r from-tertiary to-transparent opacity-90 z-10"></div>
+<img alt="Student Networking" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Group of diverse college students sitting around a table with laptops laughing and collaborating on a project in a modern library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4rljyanvAvWl2NV2VdFhk2ByVHyhlho4SFjuBNkfxtyCaDLY1rb6--HcfsKCdlKslWpFxFfrgTV4S97U8qRlCkBb32Seuk7DObb2VNl46sarsNQ1ZF1SHAFwkivqq2_j9CF5zq7QEIiuU-sU5wMttDQ9G3voBQMI33NhTgwXxVnaleUtq7MNTygLU2E-mFIqA2jOMm0PbZRVxiI4tSHaMdUZ6A7XHha8PAjbQtLerXCQtSmgtyHHWnKPRZObqdN8cF3R8rbLJHkI"/>
+<div class="relative z-20 p-12 h-full flex flex-col justify-end">
+<h3 class="text-3xl font-headline font-bold text-white mb-2">Social Events</h3>
+<p class="text-white/80 max-w-md">From game nights to corporate mixers, we build a community that lasts long after graduation.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Step-by-Step Guide -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<h2 class="text-3xl md:text-5xl font-headline font-bold text-primary text-center mb-20">How to Join</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
+<!-- Progress Line -->
+<div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-outline-variant -z-10"></div>
+<!-- Step 1 -->
+<div class="text-center group">
+<div class="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-background group-hover:bg-secondary-container transition-colors">
+<span class="text-xl font-bold text-primary">01</span>
+</div>
+<h4 class="font-headline font-bold text-tertiary mb-2">Join CampusGroups</h4>
+<p class="text-sm text-on-surface-variant">The official UMD platform for organization membership and updates.</p>
+</div>
+<!-- Step 2 -->
+<div class="text-center group">
+<div class="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-background group-hover:bg-secondary-container transition-colors">
+<span class="text-xl font-bold text-primary">02</span>
+</div>
+<h4 class="font-headline font-bold text-tertiary mb-2">Pay Dues</h4>
+<p class="text-sm text-on-surface-variant">A one-time semester fee covers all workshops, social events, and food.</p>
+</div>
+<!-- Step 3 -->
+<div class="text-center group">
+<div class="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-background group-hover:bg-secondary-container transition-colors">
+<span class="text-xl font-bold text-primary">03</span>
+</div>
+<h4 class="font-headline font-bold text-tertiary mb-2">Complete Profile</h4>
+<p class="text-sm text-on-surface-variant">Tell us about your interests so we can tailor our technical workshops.</p>
+</div>
+<!-- Step 4 -->
+<div class="text-center group">
+<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-background shadow-lg">
+<span class="material-symbols-outlined" data-icon="check">check</span>
+</div>
+<h4 class="font-headline font-bold text-tertiary mb-2">Get Connected</h4>
+<p class="text-sm text-on-surface-variant">Join our Slack and attend the next General Body Meeting (GBM).</p>
+</div>
+</div>
+</section>
+<!-- Newsletter CTA Section -->
+<section class="py-24 px-6">
+<div class="max-w-5xl mx-auto bg-primary-container rounded-[3rem] p-8 md:p-16 relative overflow-hidden text-center md:text-left">
+<div class="relative z-10 flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h2 class="text-3xl md:text-4xl font-headline font-bold text-white mb-4">Stay in the Loop</h2>
+<p class="text-white/80 mb-8 max-w-md">Subscribe to our weekly newsletter for job postings, event updates, and industry insights delivered straight to your inbox.</p>
+<form class="flex flex-col sm:flex-row gap-3">
+<input class="flex-1 px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-white/60 focus:ring-2 focus:ring-secondary focus:outline-none transition-all" placeholder="umd-email@umd.edu" type="email"/>
+<button class="px-8 py-4 rounded-full bg-secondary-container text-on-secondary-container font-bold hover:scale-105 active:opacity-90 transition-all" type="submit">Subscribe</button>
+</form>
+</div>
+<div class="hidden md:block w-64 h-64 bg-secondary-container rounded-full opacity-10 absolute -right-20 -top-20"></div>
+</div>
+</div>
+</section>
+<!-- Contact & Form Section -->
+<section class="py-24 px-6 bg-surface-container-highest/30">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<h2 class="text-3xl md:text-5xl font-headline font-bold text-primary mb-8">Questions? <br/>Reach Out.</h2>
+<p class="text-on-surface-variant mb-12 leading-relaxed">Whether you're a prospective student, an alum looking to give back, or a corporate partner interested in recruitment, we'd love to hear from you.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="font-bold text-tertiary">Van Munching Hall</p>
+<p class="text-sm text-on-surface-variant">College Park, MD 20742</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span>
+</div>
+<div>
+<p class="font-bold text-tertiary">Email Us</p>
+<p class="text-sm text-on-surface-variant">duluthmisba@gmail.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 md:p-10 rounded-3xl shadow-xl shadow-primary/5">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-tertiary ml-2">Full Name</label>
+<input class="w-full px-4 py-3 rounded-xl border-none bg-surface-container-low focus:ring-2 focus:ring-secondary/50" placeholder="John Smith" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-tertiary ml-2">UMD Email</label>
+<input class="w-full px-4 py-3 rounded-xl border-none bg-surface-container-low focus:ring-2 focus:ring-secondary/50" placeholder="jsmith@umd.edu" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-tertiary ml-2">Inquiry Type</label>
+<select class="w-full px-4 py-3 rounded-xl border-none bg-surface-container-low focus:ring-2 focus:ring-secondary/50">
+<option>Membership Question</option>
+<option>Corporate Sponsorship</option>
+<option>Technical Workshop Suggestion</option>
+<option>Other</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-tertiary ml-2">Message</label>
+<textarea class="w-full px-4 py-3 rounded-xl border-none bg-surface-container-low focus:ring-2 focus:ring-secondary/50" placeholder="How can we help?" rows="4"></textarea>
+</div>
+<button class="w-full py-4 rounded-full bg-tertiary text-on-tertiary font-bold hover:bg-primary transition-all">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 w-full py-12 px-6 tonal-shift">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div class="space-y-4">
+<span class="text-lg font-black text-red-900 dark:text-red-500 font-headline uppercase">MISBA UMD</span>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm leading-relaxed max-w-xs">
+                    The University of Maryland's premier undergraduate organization for Business Analytics and Management Information Systems.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="text-red-900 dark:text-red-500 font-bold mb-2">Connect</h5>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="#">Instagram</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="mailto:duluthmisba@gmail.com">duluthmisba@gmail.com</a>
+</div>
+<div class="flex flex-col md:items-end justify-between">
+<div class="flex gap-4 mb-8">
+<div class="w-8 h-8 rounded-full bg-red-900/10 dark:bg-red-500/10 flex items-center justify-center text-red-900 dark:text-red-500">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-red-900/10 dark:bg-red-500/10 flex items-center justify-center text-red-900 dark:text-red-500">
+<span class="material-symbols-outlined text-sm" data-icon="language">language</span>
+</div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm leading-relaxed">
+                    © 2024 MISBA UMD. All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+<!-- Mobile Navigation (Suppressed based on Transactional Intent of the join flow, but shown for UI completeness as a secondary anchor) -->
+<div class="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-950 md:hidden flex justify-around items-center px-6 py-4 border-t border-slate-200 dark:border-slate-800 z-50">
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+<span class="text-[10px] font-bold">Events</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-red-900">
+<span class="material-symbols-outlined" data-icon="person_add" data-weight="fill">person_add</span>
+<span class="text-[10px] font-bold">Join</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="text-[10px] font-bold">Contact</span>
+</div>
+</div>
+</body></html>
+
+<!-- Join MISBA -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | MISBA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#574143",
+                    "on-tertiary-fixed": "#001c3b",
+                    "tertiary-container": "#274268",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#233144",
+                    "tertiary-fixed": "#d5e3ff",
+                    "secondary-container": "#fecb32",
+                    "outline-variant": "#ddbfc2",
+                    "primary": "#5e001e",
+                    "surface-container-high": "#dce9ff",
+                    "tertiary": "#0c2c50",
+                    "primary-container": "#811331",
+                    "primary-fixed-dim": "#ffb2bb",
+                    "on-primary-fixed-variant": "#881936",
+                    "primary-fixed": "#ffd9dd",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#400012",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#d5e3fc",
+                    "on-secondary-container": "#705600",
+                    "background": "#f8f9ff",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#e6eeff",
+                    "on-secondary-fixed-variant": "#594400",
+                    "surface-bright": "#f8f9ff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "surface-container-low": "#eff4ff",
+                    "on-primary-container": "#ff8b9c",
+                    "outline": "#8a7173",
+                    "surface-dim": "#ccdbf3",
+                    "surface-variant": "#d5e3fc",
+                    "secondary": "#755b00",
+                    "on-tertiary-fixed-variant": "#2d486d",
+                    "inverse-primary": "#ffb2bb",
+                    "on-surface": "#0d1c2e",
+                    "on-error-container": "#93000a",
+                    "on-background": "#0d1c2e",
+                    "secondary-fixed": "#ffdf92",
+                    "surface-tint": "#a8334c",
+                    "on-secondary-fixed": "#241a00",
+                    "tertiary-fixed-dim": "#adc8f5",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#f2c025",
+                    "surface": "#f8f9ff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#94afda"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-white">
+<!-- TopAppBar -->
+<header class="bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl docked full-width top-0 sticky z-50 tonal-shift bg-slate-100 dark:bg-slate-900 flat no shadows">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="scale-95 active:opacity-80 transition-all text-red-900 dark:text-red-500">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-2xl font-extrabold tracking-tighter text-red-900 dark:text-red-500 font-manrope">MISBA</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Events</a>
+<a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-amber-400 hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-red-900 dark:text-red-500" data-icon="dark_mode">dark_mode</span>
+</div>
+</div>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative pt-16 pb-24 px-6 overflow-hidden">
+<div class="absolute top-0 right-0 -z-10 w-2/3 h-full opacity-10">
+<img alt="" class="object-cover w-full h-full" data-alt="abstract architectural lines of a modern university building with sharp shadows and clean minimalist geometry in soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzj8aMbg14bUIElM5W-FsMZziFBj30whfGqHpUtjxujlL64AyRzrgbQKl-IHXQ5qqeUF8X1JsHIZDoGZeEE8sLmwohhZGjdOsdPsN6n8HSjVb3skbNiGByhHRJ692KQz2QzjNXM4HxCq2twXRl7iV8-u_gumUg5kibYpJydzTNUwn5jAdEblHMSJhtZnPB-xvg1znj4fXN5mnoy3QC5HFK3OFguSoLXt70U54tA5FCfeIS1XG6j1b75kq80IOcLgJXp4Nr0k7vVYc"/>
+</div>
+<div class="max-w-7xl mx-auto">
+<div class="max-w-2xl">
+<span class="inline-block py-1 px-3 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest mb-6">GET IN TOUCH</span>
+<h2 class="text-5xl md:text-7xl font-headline font-extrabold text-primary-container leading-tight tracking-tighter mb-8">
+                        Let's connect <br/>and innovate.
+                    </h2>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-lg mb-12">
+                        Whether you're a student looking to join, an alumni wanting to give back, or a company seeking talent, we're here to help.
+                    </p>
+</div>
+<!-- Asymmetrical Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Contact Form Card -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-8 shadow-sm border border-outline-variant/20">
+<form action="mailto:duluthmisba@gmail.com" class="space-y-6" enctype="text-plain" method="post">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-primary">Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary focus:ring-offset-0 transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-primary">Email Address</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary focus:ring-offset-0 transition-all" placeholder="hello@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-primary">Inquiry Type</label>
+<select class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary focus:ring-offset-0 transition-all appearance-none">
+<option>General Inquiry</option>
+<option>Membership Questions</option>
+<option>Partnership Opportunities</option>
+<option>Event Registration Support</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-primary">Message</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary focus:ring-offset-0 transition-all resize-none" placeholder="How can we help you?" rows="5"></textarea>
+</div>
+<button class="w-full md:w-auto px-12 py-4 bg-primary-container text-white rounded-full font-bold text-lg hover:bg-primary transition-all active:scale-95 shadow-lg flex items-center justify-center gap-2" type="submit">
+                                Send Message
+                                <span class="material-symbols-outlined text-xl" data-icon="send">send</span>
+</button>
+</form>
+</div>
+<!-- Sidebar Info -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Contact Detail Cards -->
+<div class="bg-tertiary text-white rounded-xl p-8 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl" data-icon="alternate_email">alternate_email</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container" data-icon="contact_support">contact_support</span>
+                                Direct Contact
+                            </h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-container" data-icon="mail">mail</span>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-on-tertiary-container">Email us at</p>
+<a class="text-lg font-medium hover:text-secondary-container transition-colors" href="mailto:duluthmisba@gmail.com">duluthmisba@gmail.com</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-container" data-icon="location_on">location_on</span>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-on-tertiary-container">Visit us</p>
+<p class="text-lg font-medium">Labovitz School of Business and Economics, Duluth</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Social Media Bento -->
+<div class="grid grid-cols-2 gap-4">
+<a class="flex flex-col items-center justify-center bg-surface-container-high p-8 rounded-xl hover:bg-secondary-container transition-all group" href="#">
+<span class="material-symbols-outlined text-4xl mb-3 text-primary group-hover:scale-110 transition-transform" data-icon="photo_camera">photo_camera</span>
+<span class="text-sm font-bold text-primary">Instagram</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-surface-container-high p-8 rounded-xl hover:bg-secondary-container transition-all group" href="#">
+<span class="material-symbols-outlined text-4xl mb-3 text-primary group-hover:scale-110 transition-transform" data-icon="work">work</span>
+<span class="text-sm font-bold text-primary">LinkedIn</span>
+</a>
+</div>
+<!-- Interactive Map Placeholder -->
+<div class="h-64 rounded-xl overflow-hidden relative shadow-inner bg-surface-dim">
+<img alt="Map location of UMD Campus" class="w-full h-full object-cover filter grayscale contrast-125" data-alt="stylized high-contrast satellite view of a university campus map with clean white and navy blue aesthetic" data-location="Duluth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFuqVp7_VqLAQ_nlwABy5A9cnc-TYfjLh6sA6SXRRSJERSRzu7n1R4u7rZbJiD08sCwqaHO_9NO-sqNP4-4CBGwiJPzt9gyIdLCvAUyutdryqZQSVTuOtEO-8Qz8NNbIJexUYXIutBXwi13EJfVodv7xdx9wAuMPvrIGMxu-s2NYlt4T4pWGqwFxqRVPr5Y8Ca3tReuhzIKrfOvU_WVkRyEuqQwfd6m_FOntnc6y7gpYlFxi-6DMEAa5BiIwV3b37RlEkHY-_aVpY"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary-container p-3 rounded-full shadow-2xl animate-pulse">
+<span class="material-symbols-outlined text-white" data-icon="location_on" data-weight="fill" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Join Section -->
+<section class="py-24 bg-surface-container-low px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 bg-white p-12 rounded-3xl shadow-xl border border-outline-variant/10">
+<div class="max-w-md">
+<h3 class="text-3xl font-headline font-extrabold text-primary mb-4">Want the latest updates?</h3>
+<p class="text-on-surface-variant">Stay in the loop with our monthly newsletter featuring events, workshops, and career opportunities.</p>
+</div>
+<div class="flex w-full md:w-auto gap-2">
+<input class="flex-grow bg-slate-50 border-none rounded-full px-6 focus:ring-2 focus:ring-secondary transition-all" placeholder="your@email.com" type="email"/>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-full font-bold hover:bg-secondary transition-colors whitespace-nowrap">Subscribe</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 w-full py-12 px-6 tonal-shift background-color-shift flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<span class="text-lg font-black text-red-900 dark:text-red-500 font-manrope">MISBA</span>
+<p class="font-inter text-sm leading-relaxed text-slate-500 dark:text-slate-400 max-w-xs">Connecting Bulldogs with the future of information systems and business analytics.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-2">Connect</h4>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="#">Instagram</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-amber-500 font-semibold hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="mailto:duluthmisba@gmail.com">duluthmisba@gmail.com</a>
+</div>
+<div class="flex flex-col gap-4 md:items-end">
+<p class="text-slate-500 dark:text-slate-400 font-medium text-sm">© 2024 MISBA UMD. All rights reserved.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400" data-icon="shield">shield</span>
+<span class="material-symbols-outlined text-slate-400" data-icon="policy">policy</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Mobile Bottom Navigation Shell Suppression: Active context is Contact -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-slate-50/90 backdrop-blur-lg flex justify-around py-3 px-6 z-50 border-t border-outline-variant/10">
+<a class="flex flex-col items-center gap-1 text-slate-600" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-600" href="#">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+<span class="text-[10px] font-bold">Events</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-red-900" href="#">
+<span class="material-symbols-outlined" data-icon="mail" style="font-variation-settings: 'FILL' 1;">mail</span>
+<span class="text-[10px] font-bold">Contact</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-600" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="text-[10px] font-bold">Board</span>
+</a>
+</nav>
+<!-- Space for Bottom Nav on Mobile -->
+<div class="h-20 md:hidden"></div>
+</body></html>
+
+<!-- Contact Us - MISBA -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Executive Board | MISBA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#574143",
+                    "on-tertiary-fixed": "#001c3b",
+                    "tertiary-container": "#274268",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#233144",
+                    "tertiary-fixed": "#d5e3ff",
+                    "secondary-container": "#fecb32",
+                    "outline-variant": "#ddbfc2",
+                    "primary": "#5e001e",
+                    "surface-container-high": "#dce9ff",
+                    "tertiary": "#0c2c50",
+                    "primary-container": "#811331",
+                    "primary-fixed-dim": "#ffb2bb",
+                    "on-primary-fixed-variant": "#881936",
+                    "primary-fixed": "#ffd9dd",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#400012",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#d5e3fc",
+                    "on-secondary-container": "#705600",
+                    "background": "#f8f9ff",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#e6eeff",
+                    "on-secondary-fixed-variant": "#594400",
+                    "surface-bright": "#f8f9ff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "surface-container-low": "#eff4ff",
+                    "on-primary-container": "#ff8b9c",
+                    "outline": "#8a7173",
+                    "surface-dim": "#ccdbf3",
+                    "surface-variant": "#d5e3fc",
+                    "secondary": "#755b00",
+                    "on-tertiary-fixed-variant": "#2d486d",
+                    "inverse-primary": "#ffb2bb",
+                    "on-surface": "#0d1c2e",
+                    "on-error-container": "#93000a",
+                    "on-background": "#0d1c2e",
+                    "secondary-fixed": "#ffdf92",
+                    "surface-tint": "#a8334c",
+                    "on-secondary-fixed": "#241a00",
+                    "tertiary-fixed-dim": "#adc8f5",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#f2c025",
+                    "surface": "#f8f9ff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#94afda"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl docked full-width top-0 sticky z-50 tonal-shift bg-slate-100 dark:bg-slate-900 flat no shadows">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="scale-95 active:opacity-80 transition-all text-red-900 dark:text-red-500">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="text-2xl font-extrabold tracking-tighter text-red-900 dark:text-red-500 font-manrope">MISBA</span>
+</div>
+<nav class="hidden md:flex gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Events</a>
+<a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-amber-400 hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Executive Board</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-colors" href="#">Join</a>
+</nav>
+<button class="scale-95 active:opacity-80 transition-all text-red-900 dark:text-red-500">
+<span class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12">
+<!-- Hero Section -->
+<section class="mb-16">
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-primary mb-6 max-w-3xl">
+                The minds driving <span class="text-primary-container">innovation.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                Meet the visionary leaders and mentors shaping the future of Management Information Systems and Business Analytics at UMD.
+            </p>
+</section>
+<!-- Board Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Member 1: President -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:bg-surface-container-low">
+<div class="absolute left-0 top-6 bottom-6 w-1 bg-secondary rounded-full"></div>
+<div class="flex flex-col gap-6 pl-4">
+<div class="relative overflow-hidden rounded-xl aspect-square w-full">
+<img alt="John Harms" class="object-cover w-full h-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" data-alt="professional portrait of a young man with short brown hair wearing a dark suit and blue tie in a bright office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1eTUq-QAzeKxX3eJ7FR1wGk12c3Z52iYBWw63osNrOgvExvksztVJ22X0s4r72gJwWY66RBtcYKhXmGJqnY_BZNKpxAj9DMSM9dF5k7u_8Ew6Y_TRD6iQNlCREQvQCzzo-eGlceNKnP6uJWN1gCk1bQkAOd3zHKEQ1NZycMqBSwBm8AoSmEKKCT5VYUxYlYAkYxI9vQq2ALVzlc59s-DZTVQr4_UH4r6x2avfUyu_CE0QADBj_wu5nCDGXPhL5FhU7V5sdhEaQAE"/>
+</div>
+<div>
+<span class="text-secondary font-bold text-xs tracking-widest uppercase mb-2 block">President</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">John Harms</h3>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<span class="text-sm font-medium">LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Member 2: VP -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:bg-surface-container-low">
+<div class="absolute left-0 top-6 bottom-6 w-1 bg-secondary rounded-full"></div>
+<div class="flex flex-col gap-6 pl-4">
+<div class="relative overflow-hidden rounded-xl aspect-square w-full">
+<img alt="Haley Patel" class="object-cover w-full h-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" data-alt="professional headshot of a young woman with dark hair smiling warmly, wearing a white blazer against a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClBYpsn-o6Is7UBcxTmLVZ496Los2Vx1Lenkvub3jmXwWZh-qiWaUoPDI_VmuwugP6_oROnfFbvl7z8GdAni--vuHXOzXZlT4S78iUxkgu85aPqVRojuJc2Q2cKTymbMlneYvG0msvx3rs-5XQxkZrBm5w7vU_ORq73Kgyz3JSrQ4vPs0UiXJ5Zg5qz1ZgKSMWrVtW7u8kXEfa5b7MfOiTIrHt0SgFZzIz3EY_SCNFUaVk_qxjJ4zdh8P-jfp-lLKjScXUocksfAY"/>
+</div>
+<div>
+<span class="text-secondary font-bold text-xs tracking-widest uppercase mb-2 block">VP</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Haley Patel</h3>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<span class="text-sm font-medium">LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Member 3: Coordinator -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:bg-surface-container-low">
+<div class="absolute left-0 top-6 bottom-6 w-1 bg-secondary rounded-full"></div>
+<div class="flex flex-col gap-6 pl-4">
+<div class="relative overflow-hidden rounded-xl aspect-square w-full">
+<img alt="Jacob Smith" class="object-cover w-full h-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" data-alt="confident young man in business casual attire with glasses, short beard, smiling slightly in a modern library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMy_LWBMtkL51FMbm2zahj6ppp_SeB0otKRcNUQpv3W4d6uopzoAM1AyCw2BLG9ZMuyAdX11ijrynb44QRQx4eZgwsmg3C04MOaLvfdTz9gpxk4G5B6x9W68mN5jh7VET9ivi7vsQ1ch-zQ96H5YliiGKaijaFloUcAVpt3iDpZ-b3BmiKFP9EGJF3KrrdhG-JddWnpK-ubTuBfr51mtaPPwILYloiUo8kcmcn6I5g35tJ13NeY9gK0tpqKAeYxnoQOyeMh65ASvs"/>
+</div>
+<div>
+<span class="text-secondary font-bold text-xs tracking-widest uppercase mb-2 block">Coordinator</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Jacob Smith</h3>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<span class="text-sm font-medium">LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Member 4: Officer -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:bg-surface-container-low">
+<div class="absolute left-0 top-6 bottom-6 w-1 bg-secondary rounded-full"></div>
+<div class="flex flex-col gap-6 pl-4">
+<div class="relative overflow-hidden rounded-xl aspect-square w-full">
+<img alt="Sara Carlson" class="object-cover w-full h-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" data-alt="professional young woman with blonde hair in a navy suit looking directly at camera in a bright conference room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAfh15IYKDESsx-C2fq0PvOX74pbK3VF4xkT5aGBEWp_lbxBQyn8aipU4UusdrDpFgFI3cz2FVIVmoVZ7Q_onViCZ3DVRvZOx_yl_lL3-74ltjCPvqrTz9SQZfXMzIhfbgvpglU9zP2gfLvQsvwZOa1N02SDqFxCzehM7qXjPI_zgSea1MJJLlcTzkJq6CHV61rcEPLTv9WdioRZgh6v-A-Yo0W9nyRhnCfuT0FgSryLindE67xloWQbzK0Dw_iHThDxSBLwPK5hI"/>
+</div>
+<div>
+<span class="text-secondary font-bold text-xs tracking-widest uppercase mb-2 block">Officer</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Sara Carlson</h3>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<span class="text-sm font-medium">LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Member 5: Advisor -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:bg-surface-container-low">
+<div class="absolute left-0 top-6 bottom-6 w-1 bg-tertiary-container rounded-full"></div>
+<div class="flex flex-col gap-6 pl-4">
+<div class="relative overflow-hidden rounded-xl aspect-square w-full">
+<img alt="Abdelrahman Elkenawy" class="object-cover w-full h-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" data-alt="middle-aged academic professional with glasses and a kind expression in a campus setting with soft bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDndResYSOQN5gueR8WYo_jWDb3BEtbi4e97Mhmmjb0bSz8nqbLY8A0YPY6jkO2w87iSDeujZkvQeInjfvSDE33sEIWkTfRqHwlSrlxH4r1iyZySqe6eD6lod8sH9OiCmhuItsVey_Fqvi8NEPBYtT60EroVFys7j5WfFv2CWhzb6vWC5nT_7zZyVRR7Ui7xfnNi1iQnqk4Lv552zzaoQvN8TQtOGu0c16vvQcu4ko9CAJmpRtzsGZFdmqGkNpwDLGWSxFyHJGCJmU"/>
+</div>
+<div>
+<span class="text-tertiary font-bold text-xs tracking-widest uppercase mb-2 block">Advisor</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Abdelrahman Elkenawy</h3>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<span class="text-sm font-medium">LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Member 6: Advisor -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:bg-surface-container-low">
+<div class="absolute left-0 top-6 bottom-6 w-1 bg-tertiary-container rounded-full"></div>
+<div class="flex flex-col gap-6 pl-4">
+<div class="relative overflow-hidden rounded-xl aspect-square w-full">
+<img alt="Seung Lee" class="object-cover w-full h-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" data-alt="distinguished professor in a professional attire standing in front of a glass wall with digital data overlays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr9FmxaaXlFV0pv6eIRQ8uduNkdGRdYrA55EAOlvgkZcui8dKeukWAQoETeNzc0OGyLvVRZa1xCYHFgim6LBiwu2cGZWtSrLbpZLo4MgZ2jHw6HZfAyPYZNPzEfDovqBEec7KUX1ts58TuBaoQutOLR9Z05jXBcgWFXf35s6Tj0FoQlbwohaSwMv4VH9O6oYg-JqsSeylD4EQWfVkBna0lXkZsmXee1MEMhE3BNiMKl3peWNL-mGrZ7CfWXCfvYnMtm202KOi0cbo"/>
+</div>
+<div>
+<span class="text-tertiary font-bold text-xs tracking-widest uppercase mb-2 block">Advisor</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Seung Lee</h3>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<span class="text-sm font-medium">LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Member 7: Advisor -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:bg-surface-container-low">
+<div class="absolute left-0 top-6 bottom-6 w-1 bg-tertiary-container rounded-full"></div>
+<div class="flex flex-col gap-6 pl-4">
+<div class="relative overflow-hidden rounded-xl aspect-square w-full">
+<img alt="Nik Hassan" class="object-cover w-full h-full grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" data-alt="senior faculty member with a friendly smile, wearing business attire, photographed in a well-lit academic hallway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7o4V_5m8PRue-N0v63Cs5dEr-K1xYqpIBGng6Bbw0Bn_X74FT55ZsqJQ1k1aOY74OT0NUjjM_5PEsEJPhMSjC545bQebQ0xqLFhWA3s90qfMlUgpgQvY9lD5ac3jRxnf0qpxPk70w6zwDlczhF5QEa5UPJK25w9Q1vf33yE1-6pp14cjbyyALI0IhdYwHtB4Eeb6jA4coHA42mxuMwv3GZmuL9Zc6TLiGYVw9ZadJDzm4VVA5-g_xgz5GrtMaOG8w5AsVs1hB3Ss"/>
+</div>
+<div>
+<span class="text-tertiary font-bold text-xs tracking-widest uppercase mb-2 block">Advisor</span>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Nik Hassan</h3>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<span class="text-sm font-medium">LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 w-full py-12 px-6 tonal-shift background-color-shift flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<span class="text-lg font-black text-red-900 dark:text-red-500 font-manrope">MISBA UMD</span>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm leading-relaxed max-w-xs">
+                    Empowering students to bridge the gap between technology and business strategy through education and community.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-primary dark:text-red-500">Quick Links</h4>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="#">Instagram</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-red-800 dark:hover:text-red-200 underline transition-opacity opacity-90 hover:opacity-100" href="#">duluthmisba@gmail.com</a>
+</div>
+</div>
+<div class="flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-primary dark:text-red-500">Location</h4>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                        University of Minnesota Duluth<br/>Labovitz School of Business and Economics
+                    </p>
+</div>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm leading-relaxed mt-8">© 2024 MISBA UMD. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-slate-50/90 backdrop-blur-lg border-t-0 shadow-2xl z-50">
+<div class="flex justify-around items-center h-16">
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="event">event</span>
+<span class="text-[10px] font-medium">Events</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-red-900 font-bold" href="#">
+<span class="material-symbols-outlined" data-icon="groups" style="font-variation-settings: 'FILL' 1;">groups</span>
+<span class="text-[10px]">Board</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined" data-icon="person_add">person_add</span>
+<span class="text-[10px] font-medium">Join</span>
+</a>
+</div>
+</div>
+</body></html>
